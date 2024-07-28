@@ -1,0 +1,187 @@
+<main class="flex justify-center items-center h-auto w-full overflow-x-hidden overflow-y-auto">
+  <!-- Main container with flexbox to center content horizontally and vertically -->
+  <div class="flex flex-col justify-center items-start h-auto w-full py-14 px-20 Tablet_Design:p-16 Large_Mobile_Design:p-14 Small_Mobile_Design:px-5 Small_Mobile_Design:py-10">
+    <!-- Container for responsive padding adjustments based on device size -->
+    <div class="flex flex-col">
+      <!-- Column container for text and button elements -->
+
+      <!-- Title Section -->
+      <h1 class="text-[#4F4F4F] text-2xl font-medium font-Poppins">{{title_name}}</h1>
+
+      <!-- Default Button Section -->
+      <div class="grid grid-cols-2 gap-7 mt-7 Tablet_Design:grid-cols-1 Large_Mobile_Design:grid-cols-1 Small_Mobile_Design:grid-cols-1">
+        <div class="flex flex-col">
+          <!-- Default button code snippet -->
+          <code class="text-[#000000] text-xs font-normal font-Ubuntu_Mono mb-2">&lt;Button /&gt;</code>
+          <!-- Default button -->
+          <button class="bg-[#E0E0E0] text-[#3F3F3F] text-sm font-medium font-Noto_Sans h-9 w-20 rounded-md transition-all ease-in-out duration-200 hover:bg-[#9E9E9E] hover:text-[#3F3F3F] focus:bg-[#9E9E9E] focus:text-[#3F3F3F]">Default</button>
+        </div>
+        <div class="flex flex-col">
+          <!-- Hover and focus state code snippet -->
+          <code class="text-[#828282] text-xs font-normal font-Ubuntu_Mono mb-2">&:hover, &:focus</code>
+          <!-- Disabled button -->
+          <button class="bg-[#9E9E9E] text-[#3F3F3F] text-sm font-medium font-Noto_Sans h-9 w-20 rounded-md" disabled>Default</button>
+        </div>
+      </div>
+
+      <!-- Outline Button Section -->
+      <div class="grid grid-cols-2 gap-7 my-7 Tablet_Design:grid-cols-1 Large_Mobile_Design:grid-cols-1 Small_Mobile_Design:grid-cols-1">
+        <div class="flex flex-col">
+          <!-- Outline button code snippet -->
+          <code class="text-[#000000] text-xs font-normal font-Ubuntu_Mono mb-2">&lt;Button variant=”outline” /&gt;</code>
+          <!-- Outline button -->
+          <button class="bg-white text-[#3D5AFE] text-sm font-medium font-Noto_Sans h-9 w-20 rounded-md border-2 border-solid border-[#3D5AFE] transition-all ease-in-out duration-200 hover:bg-[#2962FF1A] hover:text-[#3D5AFE] focus:bg-[#2962FF1A] focus:text-[#3D5AFE]">Default</button>
+        </div>
+        <div class="flex flex-col">
+          <!-- Hover and focus state code snippet -->
+          <code class="text-[#828282] text-xs font-normal font-Ubuntu_Mono mb-2">&:hover, &:focus</code>
+          <!-- Disabled outline button -->
+          <button class="bg-[#2962FF1A] text-[#3D5AFE] text-sm font-medium font-Noto_Sans h-9 w-20 rounded-md border-2 border-solid border-[#3D5AFE]" disabled>Default</button>
+        </div>
+      </div>
+
+      <!-- Text Button Section -->
+      <div class="grid grid-cols-2 gap-7 my-7 Tablet_Design:grid-cols-1 Large_Mobile_Design:grid-cols-1 Small_Mobile_Design:grid-cols-1">
+        <div class="flex flex-col">
+          <!-- Text button code snippet -->
+          <code class="text-[#000000] text-xs font-normal font-Ubuntu_Mono mb-2">&lt;Button variant=”text” /&gt;</code>
+          <!-- Text button -->
+          <button class="text-[#3D5AFE] font-medium font-Noto_Sans h-9 w-20 transition-all ease-in-out duration-200 hover:bg-[#2962FF1A] hover:text-[#3D5AFE] hover:rounded-md focus:bg-[#2962FF1A] focus:text-[#3D5AFE] focus:rounded-md">Default</button>
+        </div>
+        <div class="flex flex-col">
+          <!-- Hover and focus state code snippet -->
+          <code class="text-[#828282] text-xs font-normal font-Ubuntu_Mono mb-2">&:hover, &:focus</code>
+          <!-- Disabled text button -->
+          <button class="bg-[#2962FF1A] text-[#3D5AFE] font-medium font-Noto_Sans h-9 w-20 rounded-md" disabled>Default</button>
+        </div>
+      </div>
+
+      <!-- Button without Shadow Section -->
+      <div class="grid grid-cols-2 gap-7 my-7 Tablet_Design:grid-cols-1 Large_Mobile_Design:grid-cols-1 Small_Mobile_Design:grid-cols-1">
+        <div class="flex flex-col">
+          <!-- Button without shadow code snippet -->
+          <code class="text-[#000000] text-xs font-normal font-Ubuntu_Mono mb-2">&lt;Button disableShadow /&gt;</code>
+          <!-- Button without shadow -->
+          <button class="bg-[#3D5AFE] text-white font-medium font-Noto_Sans h-9 w-20 rounded-md cursor-not-allowed">Default</button>
+        </div>
+      </div>
+
+      <!-- Disabled Button Section -->
+      <div class="grid grid-cols-2 gap-7 my-7 Tablet_Design:grid-cols-1 Large_Mobile_Design:grid-cols-1 Small_Mobile_Design:grid-cols-1">
+        <div class="flex flex-col">
+          <!-- Disabled button code snippet -->
+          <code class="text-[#000000] text-xs font-normal font-Ubuntu_Mono mb-2">&lt;Button disabled /&gt;</code>
+          <!-- Disabled button -->
+          <button class="bg-[#E0E0E0] disabled:text-[#9E9E9E] font-medium font-Noto_Sans h-9 w-20 rounded-md cursor-not-allowed" disabled>Disabled</button>
+        </div>
+        <div class="flex flex-col">
+          <!-- Disabled text button code snippet -->
+          <code class="text-[#000000] text-xs font-normal font-Ubuntu_Mono mb-2">&lt;Button variant=”text” disabled /&gt;</code>
+          <!-- Disabled text button -->
+          <button class="disabled:text-[#9E9E9E] h-9 w-20 cursor-not-allowed" disabled>Disabled</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Icon Button Section -->
+    <div class="grid grid-cols-2 gap-7 my-7 Tablet_Design:grid-cols-1 Large_Mobile_Design:grid-cols-1 Small_Mobile_Design:grid-cols-1">
+      <div class="flex flex-col">
+        <!-- Button with start icon code snippet -->
+        <code class="text-[#000000] text-xs font-normal font-Ubuntu_Mono mb-2 Small_Mobile_Design:text-[10px]">&lt;Button startIcon=”local_grocery_store” /&gt;</code>
+        <!-- Button with start icon -->
+        <button class="bg-[#3D5AFE] text-white text-sm font-medium font-Noto_Sans h-9 w-28 rounded-md flex justify-center items-center">
+          <img src="images/shopping_adding_cart_icon.svg" alt="" class="mr-3" />
+          <span>Default</span>
+        </button>
+      </div>
+      <div class="flex flex-col">
+        <!-- Button with end icon code snippet -->
+        <code class="text-[#000000] text-xs font-normal font-Ubuntu_Mono mb-2 Small_Mobile_Design:text-[10px]">&lt;Button endIcon=”local_grocery_store” /&gt;</code>
+        <!-- Button with end icon -->
+        <button class="bg-[#3D5AFE] text-white text-sm font-medium font-Noto_Sans h-9 w-28 rounded-md flex justify-center items-center">
+          <span>Default</span>
+          <img src="images/shopping_adding_cart_icon.svg" alt="" class="ml-3" />
+        </button>
+      </div>
+    </div>
+
+    <div>
+
+      <!-- Button Size Section -->
+      <div class="grid grid-cols-4 gap-7 my-7 Tablet_Design:grid-cols-1 Large_Mobile_Design:grid-cols-1 Small_Mobile_Design:grid-cols-1">
+        <div class="flex flex-col">
+          <!-- Small size button code snippet -->
+          <code class="text-[#000000] text-xs font-normal font-Ubuntu_Mono mb-2">&lt;Button size=”sm” /&gt;</code>
+          <!-- Small size button -->
+          <button class="bg-[#2962FF] text-[#FFFFFF] text-sm font-medium font-Noto_Sans h-8 w-[73px] rounded-md">Default</button>
+        </div>
+        <div class="flex flex-col">
+          <!-- Medium size button code snippet -->
+          <code class="text-[#000000] text-xs font-normal font-Ubuntu_Mono mb-2">&lt;Button size="md" /&gt;</code>
+          <!-- Medium size button -->
+          <button class="bg-[#2962FF] text-[#FFFFFF] text-sm font-medium font-Noto_Sans h-9 w-20 rounded-md">Default</button>
+        </div>
+        <div class="flex flex-col">
+          <!-- Large size button code snippet -->
+          <code class="text-[#000000] text-xs font-normal font-Ubuntu_Mono mb-2">&lt;Button size="lg" /&gt;</code>
+          <!-- Large size button -->
+          <button class="bg-[#2962FF] text-[#FFFFFF] text-sm font-medium font-Noto_Sans h-[42px] w-[93px] rounded-md">Default</button>
+        </div>
+      </div>
+
+      <!-- Button Color Section -->
+      <div class="grid grid-cols-4 gap-7 my-7 Tablet_Design:grid-cols-1 Large_Mobile_Design:grid-cols-1 Small_Mobile_Design:grid-cols-1">
+        <div class="flex flex-col">
+          <!-- Default color button code snippet -->
+          <code class="text-[#000000] text-xs font-normal font-Ubuntu_Mono mb-2 Small_Laptop_Design:text-[9px]">&lt;Button color="default" /&gt;</code>
+          <!-- Default color button -->
+          <button class="bg-[#E0E0E0] text-[#3F3F3F] text-sm font-medium font-Noto_Sans h-9 w-20 rounded-md transition-all ease-in-out duration-200 hover:bg-[#AEAEAE] hover:text-[#3F3F3F] focus:bg-[#AEAEAE] focus:text-[#3F3F3F]">Default</button>
+        </div>
+        <div class="flex flex-col">
+          <!-- Primary color button code snippet -->
+          <code class="text-[#000000] text-xs font-normal font-Ubuntu_Mono mb-2 Small_Laptop_Design:text-[9px]">&lt;Button color="primary" /&gt;</code>
+          <!-- Primary color button -->
+          <button class="bg-[#2962FF] text-[#FFFFFF] text-sm font-medium font-Noto_Sans h-9 w-20 rounded-md transition-all ease-in-out duration-200 hover:bg-[#0039CB] hover:text-[#FFFFFF] focus:bg-[#0039CB] focus:text-[#FFFFFF]">Default</button>
+        </div>
+        <div class="flex flex-col">
+          <!-- Secondary color button code snippet -->
+          <code class="text-[#000000] text-xs font-normal font-Ubuntu_Mono mb-2 Small_Laptop_Design:text-[9px]">&lt;Button color="secondary" /&gt;</code>
+          <!-- Secondary color button -->
+          <button class="bg-[#455A64] text-[#FFFFFF] text-sm font-medium font-Noto_Sans h-9 w-28 rounded-md transition-all ease-in-out duration-200 hover:bg-[#1C313A] hover:text-[#FFFFFF] focus:bg-[#1C313A] focus:text-[#FFFFFF]">Secondary</button>
+        </div>
+        <div class="flex flex-col">
+          <!-- Danger color button code snippet -->
+          <code class="text-[#000000] text-xs font-normal font-Ubuntu_Mono mb-2 Small_Laptop_Design:text-[9px]">&lt;Button color="danger" /&gt;</code>
+          <!-- Danger color button -->
+          <button class="bg-[#D32F2F] text-[#FFFFFF] text-sm font-medium font-Noto_Sans h-9 w-20 rounded-md transition-all ease-in-out duration-200 hover:bg-[#9A0007] hover:text-[#FFFFFF] focus:bg-[#9A0007] focus:text-[#FFFFFF]">Danger</button>
+        </div>
+      </div>
+
+      <!-- Disabled Button State Section -->
+      <div class="grid grid-cols-4 gap-7 my-7 Tablet_Design:grid-cols-1 Large_Mobile_Design:grid-cols-1 Small_Mobile_Design:grid-cols-1">
+        <div class="flex flex-col">
+          <!-- Disabled default color button -->
+          <code class="text-[#828282] text-xs font-normal font-Ubuntu_Mono mb-2">&:hover, &:focus</code>
+          <button class="bg-[#AEAEAE] text-[#3F3F3F] text-sm font-medium font-Noto_Sans h-9 w-20 rounded-md" disabled>Default</button>
+        </div>
+        <div class="flex flex-col">
+          <!-- Disabled primary color button -->
+          <code class="text-[#828282] text-xs font-normal font-Ubuntu_Mono mb-2 hidden Tablet_Design:block Large_Mobile_Design:block Small_Mobile_Design:block">&:hover, &:focus</code>
+          <button class="bg-[#0039CB] text-[#FFFFFF] text-sm font-medium font-Noto_Sans h-9 w-20 rounded-md mt-6 Tablet_Design:mt-0 Large_Mobile_Design:mt-0 Small_Mobile_Design:mt-0" disabled>Default</button>
+        </div>
+        <div class="flex flex-col">
+          <!-- Disabled secondary color button -->
+          <code class="text-[#828282] text-xs font-normal font-Ubuntu_Mono mb-2 hidden Tablet_Design:block Large_Mobile_Design:block Small_Mobile_Design:block">&:hover, &:focus</code>
+          <button class="bg-[#1C313A] text-[#FFFFFF] text-sm font-medium font-Noto_Sans h-9 w-28 rounded-md mt-6 Tablet_Design:mt-0 Large_Mobile_Design:mt-0 Small_Mobile_Design:mt-0" disabled>Secondary</button>
+        </div>
+        <div class="flex flex-col">
+          <!-- Disabled danger color button -->
+          <code class="text-[#828282] text-xs font-normal font-Ubuntu_Mono mb-2 hidden Tablet_Design:block Large_Mobile_Design:block Small_Mobile_Design:block">&:hover, &:focus</code>
+          <button class="bg-[#9A0007] text-[#FFFFFF] text-sm font-medium font-Noto_Sans h-9 w-20 rounded-md mt-6 Tablet_Design:mt-0 Large_Mobile_Design:mt-0 Small_Mobile_Design:mt-0" disabled>Danger</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
