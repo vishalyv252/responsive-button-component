@@ -37,7 +37,14 @@ export function app(): express.Express {
         publicPath: browserDistFolder,
         providers: [{ provide: APP_BASE_HREF, useValue: baseUrl }],
       })
-      .then((html) => res.send(html))
+      .then((html) => {
+        // Check if the response is the custom 404 page
+        if (html.includes('<app-not-found-page></app-not-found-page>')) {
+          res.status(404).send(html);
+        } else {
+          res.send(html);
+        }
+      })
       .catch((err) => next(err));
   });
 
